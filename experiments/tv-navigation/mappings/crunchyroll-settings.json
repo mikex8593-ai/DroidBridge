@@ -1,0 +1,1 @@
+{"name":"crunchyroll-settings","package":"com.crunchyroll.crunchyroid","activity":"com.crunchyroll.crunchyroid.player.ui.PlayerActivity","version":"3.80.0","steps":[{"keys":[127,19,19,19],"spacing_ms":200,"settle_ms":300,"require_focus":"btnSettings","select":true}],"post_ids":["playerSettingsAudioDrawerItem","playerSettingsSubtitlesDrawerItem"]}
