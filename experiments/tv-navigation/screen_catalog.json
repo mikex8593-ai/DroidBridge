@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "purpose": "Evidence-backed navigation knowledge; not permission to replay from stale state.",
+  "apps": [
+    {
+      "package": "com.crunchyroll.crunchyroid",
+      "version": "3.80.0",
+      "evidence": [
+        "README.md"
+      ],
+      "screens": [
+        {
+          "name": "player_controls",
+          "activity": "com.crunchyroll.crunchyroid.player.ui.PlayerActivity",
+          "required_ids": [
+            "btnPlayPause",
+            "btnSettings"
+          ],
+          "mapping": "crunchyroll-settings",
+          "status": "example_revalidate_before_use",
+          "notes": "Use existing runner's fresh focus checks before SELECT; overlay can expire even while paused."
+        },
+        {
+          "name": "player_settings",
+          "activity": "com.crunchyroll.crunchyroid.player.ui.PlayerActivity",
+          "required_ids": [
+            "playerSettingsAudioDrawerItem",
+            "playerSettingsSubtitlesDrawerItem"
+          ],
+          "mapping": null,
+          "status": "observed",
+          "notes": "Audio/subtitle drawer verified; changing values not tested or authorized by this catalog."
+        }
+      ]
+    }
+  ]
+}

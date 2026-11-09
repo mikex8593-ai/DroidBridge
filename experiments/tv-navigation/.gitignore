@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.db
+*.sqlite*
+*.log
+*.png
+*.jpg
+*.mp4
+*.lock
+STOP
+last-result.json
+credentials*
+secrets*
+token*
